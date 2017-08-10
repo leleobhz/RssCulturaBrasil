@@ -8,9 +8,7 @@ Aplicação em Python que gera um Feed RSS dos programas disponívels pela Rádi
 
 ## Screenshots 
 
-![ScreenShot 01](https://raw.githubusercontent.com/leleobhz/RssCulturaBrasil/master/screenshots/screen01.png)
-![ScreenShot 02](https://raw.githubusercontent.com/leleobhz/RssCulturaBrasil/master/screenshots/screen02.png)
-![ScreenShot 03](https://raw.githubusercontent.com/leleobhz/RssCulturaBrasil/master/screenshots/screen03.png)
+![ScreenShot 01](https://raw.githubusercontent.com/leleobhz/RssCulturaBrasil/master/screenshots/screen01.png) | ![ScreenShot 02](https://raw.githubusercontent.com/leleobhz/RssCulturaBrasil/master/screenshots/screen02.png) | ![ScreenShot 03](https://raw.githubusercontent.com/leleobhz/RssCulturaBrasil/master/screenshots/screen03.png)
 
 ## TODO
 
