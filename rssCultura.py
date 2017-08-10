@@ -1,12 +1,8 @@
 #!/usr/bin/python3
 
-try: 
-    from BeautifulSoup import BeautifulSoup
-except ImportError:
-    from bs4 import BeautifulSoup
-
-import urllib.request, re, pprint, datetime, subprocess, shlex, json, sys
+import urllib.request, re, datetime, subprocess, shlex, json, sys
 from pytz import timezone
+from bs4 import BeautifulSoup
 
 # A bit of https://gist.github.com/oldo/dc7ee7f28851922cca09
 
