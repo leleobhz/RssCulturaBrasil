@@ -58,7 +58,7 @@ def parseEntry(page):
     entry['descricao'] = list(list(htmlParsed.find_all('div', attrs={'class' : 'content'}))[0].find_all('p'))[1].text
 
     # Audio
-    entry['audio'] = re.search('http://midia.cmais.com.br/assets/audio/default/.*\.mp3',htmlParsed.select_one("div script:nth-of-type(3)").text).group(0)
+    entry['audio'] = re.search('http://midia.cmais.com.br/assets/audio/default/.*\.mp3',str(htmlParsed.find_all("div", {"class": "span8 content-asset"})[0])).group()
 
     # Tamanho do arquivo
     entry['filesize'] = urllib.request.urlopen(urllib.request.Request(url=entry['audio'], headers={ 'User-Agent': 'Mozilla/5.0' })).headers['content-length']
@@ -98,8 +98,8 @@ def feedGen(programa):
         fe.published(parsedEntry['data'])
         fe.podcast.itunes_duration(str(datetime.timedelta(seconds=parsedEntry['duracao'])))
 
-    fg.rss_file('/usr/share/nginx/html/'+programa+'.rss')
-#    return fg.rss_str(pretty=True)
+    fg.rss_file('/tmp/'+programa+'.rss')
+    #return fg.rss_str(pretty=True)
 
 
 if __name__ == "__main__":
